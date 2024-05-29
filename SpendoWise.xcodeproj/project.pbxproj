@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AA0DD081034C5E297CB3A55 /* Pods_SpendoWise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD0D9FC2D9B73426B5BF7E7 /* Pods_SpendoWise.framework */; };
+		738B1C1825C65DFE0067407B /* SpendoWiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C1725C65DFE0067407B /* SpendoWiseApp.swift */; };
+		738B1C1C25C65E060067407B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C1B25C65E060067407B /* Assets.xcassets */; };
+		738B1C1F25C65E060067407B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C1E25C65E060067407B /* Preview Assets.xcassets */; };
+		738B1C2F25C65EF70067407B /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C2E25C65EF70067407B /* Configs.swift */; };
+		738B1C3325C660140067407B /* ExpenseCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C3225C660140067407B /* ExpenseCD.swift */; };
+		738B1C3825C661750067407B /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C3725C661750067407B /* ExpenseView.swift */; };
+		738B1C3C25C662580067407B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C3B25C662580067407B /* Models.swift */; };
+		738B1C4025C662890067407B /* InterFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C3F25C662890067407B /* InterFontModifier.swift */; };
+		738B1C4325C6629D0067407B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C4225C6629C0067407B /* ColorExtension.swift */; };
+		738B1C4625C662D90067407B /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C4525C662D90067407B /* TextView.swift */; };
+		738B1C4925C662F20067407B /* DropdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C4825C662F20067407B /* DropdownButton.swift */; };
+		738B1C4C25C663060067407B /* DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C4B25C663060067407B /* DismissKeyboard.swift */; };
+		738B1C4F25C663180067407B /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C4E25C663180067407B /* DateExtension.swift */; };
+		738B1C5225C6632F0067407B /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C5125C6632F0067407B /* HelperMethods.swift */; };
+		738B1C5F25C671A80067407B /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C5525C671A70067407B /* Inter-ExtraLight.ttf */; };
+		738B1C6025C671A80067407B /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C5625C671A70067407B /* Inter-Black.ttf */; };
+		738B1C6125C671A80067407B /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C5725C671A80067407B /* Inter-Medium.ttf */; };
+		738B1C6225C671A80067407B /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C5825C671A80067407B /* Inter-SemiBold.ttf */; };
+		738B1C6325C671A80067407B /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C5925C671A80067407B /* Inter-Bold.ttf */; };
+		738B1C6425C671A80067407B /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C5A25C671A80067407B /* OFL.txt */; };
+		738B1C6525C671A80067407B /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C5B25C671A80067407B /* Inter-ExtraBold.ttf */; };
+		738B1C6625C671A80067407B /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C5C25C671A80067407B /* Inter-Light.ttf */; };
+		738B1C6725C671A80067407B /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C5D25C671A80067407B /* Inter-Thin.ttf */; };
+		738B1C6825C671A80067407B /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C5E25C671A80067407B /* Inter-Regular.ttf */; };
+		738B1C7725C675200067407B /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C7625C675200067407B /* AddExpenseView.swift */; };
+		738B1C7B25C6752E0067407B /* AddExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C7A25C6752E0067407B /* AddExpenseViewModel.swift */; };
+		738B1C8025C6763E0067407B /* ExpenseDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C7F25C6763E0067407B /* ExpenseDetailedView.swift */; };
+		738B1C8425C6764B0067407B /* ExpenseDetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C8325C6764B0067407B /* ExpenseDetailedViewModel.swift */; };
+		738B1C8B25C67D880067407B /* ExpenseFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C8A25C67D880067407B /* ExpenseFilterView.swift */; };
+		73998C5525DA5578007D735B /* AttachmentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73998C5425DA5578007D735B /* AttachmentHandler.swift */; };
+		73E688DA25FF32790000462A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E688D925FF32790000462A /* ChartView.swift */; };
+		D18517C82C01CE2900229664 /* SpendoWise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D18517C62C01CE2900229664 /* SpendoWise.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3AD0D9FC2D9B73426B5BF7E7 /* Pods_SpendoWise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpendoWise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C069B0CDF6CE6EA868C9682 /* Pods-SpendoWise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendoWise.debug.xcconfig"; path = "Target Support Files/Pods-SpendoWise/Pods-SpendoWise.debug.xcconfig"; sourceTree = "<group>"; };
+		738B1C1425C65DFE0067407B /* SpendoWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendoWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		738B1C1725C65DFE0067407B /* SpendoWiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendoWiseApp.swift; sourceTree = "<group>"; };
+		738B1C1B25C65E060067407B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		738B1C1E25C65E060067407B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		738B1C2525C65E060067407B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		738B1C2E25C65EF70067407B /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		738B1C3225C660140067407B /* ExpenseCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCD.swift; sourceTree = "<group>"; };
+		738B1C3725C661750067407B /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
+		738B1C3B25C662580067407B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		738B1C3F25C662890067407B /* InterFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterFontModifier.swift; sourceTree = "<group>"; };
+		738B1C4225C6629C0067407B /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		738B1C4525C662D90067407B /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		738B1C4825C662F20067407B /* DropdownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownButton.swift; sourceTree = "<group>"; };
+		738B1C4B25C663060067407B /* DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboard.swift; sourceTree = "<group>"; };
+		738B1C4E25C663180067407B /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		738B1C5125C6632F0067407B /* HelperMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperMethods.swift; sourceTree = "<group>"; };
+		738B1C5525C671A70067407B /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		738B1C5625C671A70067407B /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		738B1C5725C671A80067407B /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		738B1C5825C671A80067407B /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		738B1C5925C671A80067407B /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		738B1C5A25C671A80067407B /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		738B1C5B25C671A80067407B /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		738B1C5C25C671A80067407B /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		738B1C5D25C671A80067407B /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		738B1C5E25C671A80067407B /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		738B1C7625C675200067407B /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
+		738B1C7A25C6752E0067407B /* AddExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewModel.swift; sourceTree = "<group>"; };
+		738B1C7F25C6763E0067407B /* ExpenseDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailedView.swift; sourceTree = "<group>"; };
+		738B1C8325C6764B0067407B /* ExpenseDetailedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailedViewModel.swift; sourceTree = "<group>"; };
+		738B1C8A25C67D880067407B /* ExpenseFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseFilterView.swift; sourceTree = "<group>"; };
+		73998C5425DA5578007D735B /* AttachmentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentHandler.swift; sourceTree = "<group>"; };
+		73E688D925FF32790000462A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		D18517C72C01CE2900229664 /* Expenso.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Expenso.xcdatamodel; sourceTree = "<group>"; };
+		E52499599E1F89C6FACB8F84 /* Pods-SpendoWise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendoWise.release.xcconfig"; path = "Target Support Files/Pods-SpendoWise/Pods-SpendoWise.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		738B1C1125C65DFE0067407B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA0DD081034C5E297CB3A55 /* Pods_SpendoWise.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E40FEF9C21BCF815EB2F53D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AD0D9FC2D9B73426B5BF7E7 /* Pods_SpendoWise.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		733763A827120DB600AA983A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C3625C661580067407B /* Expense */,
+				738B1C7525C6750F0067407B /* AddExpense */,
+				738B1C7D25C675FA0067407B /* ExpenseDetailed */,
+				738B1C8925C67D790067407B /* ExpenseFilter */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		733763A927120DF300AA983A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C5425C671680067407B /* Inter */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		733763AA27120E0500AA983A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C3A25C662060067407B /* Helpers */,
+				738B1C3125C660070067407B /* CoreData */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		738B1C0B25C65DFE0067407B = {
+			isa = PBXGroup;
+			children = (
+				738B1C1625C65DFE0067407B /* SpendoWise */,
+				738B1C1525C65DFE0067407B /* Products */,
+				8750B56D6AA40715F5AA8490 /* Pods */,
+				2E40FEF9C21BCF815EB2F53D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		738B1C1525C65DFE0067407B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C1425C65DFE0067407B /* SpendoWise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		738B1C1625C65DFE0067407B /* SpendoWise */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C2E25C65EF70067407B /* Configs.swift */,
+				733763AA27120E0500AA983A /* Library */,
+				733763A927120DF300AA983A /* Resources */,
+				733763A827120DB600AA983A /* Screens */,
+				738B1C1725C65DFE0067407B /* SpendoWiseApp.swift */,
+				738B1C1B25C65E060067407B /* Assets.xcassets */,
+				738B1C2525C65E060067407B /* Info.plist */,
+				D18517C62C01CE2900229664 /* SpendoWise.xcdatamodeld */,
+				738B1C1D25C65E060067407B /* Preview Content */,
+			);
+			path = SpendoWise;
+			sourceTree = "<group>";
+		};
+		738B1C1D25C65E060067407B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C1E25C65E060067407B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		738B1C3125C660070067407B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C3225C660140067407B /* ExpenseCD.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		738B1C3625C661580067407B /* Expense */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C3725C661750067407B /* ExpenseView.swift */,
+			);
+			path = Expense;
+			sourceTree = "<group>";
+		};
+		738B1C3A25C662060067407B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C3B25C662580067407B /* Models.swift */,
+				738B1C3F25C662890067407B /* InterFontModifier.swift */,
+				738B1C4225C6629C0067407B /* ColorExtension.swift */,
+				738B1C4525C662D90067407B /* TextView.swift */,
+				738B1C4825C662F20067407B /* DropdownButton.swift */,
+				738B1C4B25C663060067407B /* DismissKeyboard.swift */,
+				738B1C4E25C663180067407B /* DateExtension.swift */,
+				738B1C5125C6632F0067407B /* HelperMethods.swift */,
+				73998C5425DA5578007D735B /* AttachmentHandler.swift */,
+				73E688D925FF32790000462A /* ChartView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		738B1C5425C671680067407B /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C5625C671A70067407B /* Inter-Black.ttf */,
+				738B1C5925C671A80067407B /* Inter-Bold.ttf */,
+				738B1C5B25C671A80067407B /* Inter-ExtraBold.ttf */,
+				738B1C5525C671A70067407B /* Inter-ExtraLight.ttf */,
+				738B1C5C25C671A80067407B /* Inter-Light.ttf */,
+				738B1C5725C671A80067407B /* Inter-Medium.ttf */,
+				738B1C5E25C671A80067407B /* Inter-Regular.ttf */,
+				738B1C5825C671A80067407B /* Inter-SemiBold.ttf */,
+				738B1C5D25C671A80067407B /* Inter-Thin.ttf */,
+				738B1C5A25C671A80067407B /* OFL.txt */,
+			);
+			path = Inter;
+			sourceTree = "<group>";
+		};
+		738B1C7525C6750F0067407B /* AddExpense */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C7625C675200067407B /* AddExpenseView.swift */,
+				738B1C7A25C6752E0067407B /* AddExpenseViewModel.swift */,
+			);
+			path = AddExpense;
+			sourceTree = "<group>";
+		};
+		738B1C7D25C675FA0067407B /* ExpenseDetailed */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C7F25C6763E0067407B /* ExpenseDetailedView.swift */,
+				738B1C8325C6764B0067407B /* ExpenseDetailedViewModel.swift */,
+			);
+			path = ExpenseDetailed;
+			sourceTree = "<group>";
+		};
+		738B1C8925C67D790067407B /* ExpenseFilter */ = {
+			isa = PBXGroup;
+			children = (
+				738B1C8A25C67D880067407B /* ExpenseFilterView.swift */,
+			);
+			path = ExpenseFilter;
+			sourceTree = "<group>";
+		};
+		8750B56D6AA40715F5AA8490 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C069B0CDF6CE6EA868C9682 /* Pods-SpendoWise.debug.xcconfig */,
+				E52499599E1F89C6FACB8F84 /* Pods-SpendoWise.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		738B1C1325C65DFE0067407B /* SpendoWise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 738B1C2825C65E060067407B /* Build configuration list for PBXNativeTarget "SpendoWise" */;
+			buildPhases = (
+				B74C3228BD6DF0A4DD59912C /* [CP] Check Pods Manifest.lock */,
+				738B1C1025C65DFE0067407B /* Sources */,
+				738B1C1125C65DFE0067407B /* Frameworks */,
+				738B1C1225C65DFE0067407B /* Resources */,
+				66AC78FB5FF0B155DEC0F276 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpendoWise;
+			productName = Expenso;
+			productReference = 738B1C1425C65DFE0067407B /* SpendoWise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		738B1C0C25C65DFE0067407B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					738B1C1325C65DFE0067407B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 738B1C0F25C65DFE0067407B /* Build configuration list for PBXProject "SpendoWise" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 738B1C0B25C65DFE0067407B;
+			productRefGroup = 738B1C1525C65DFE0067407B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				738B1C1325C65DFE0067407B /* SpendoWise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		738B1C1225C65DFE0067407B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				738B1C6625C671A80067407B /* Inter-Light.ttf in Resources */,
+				738B1C6225C671A80067407B /* Inter-SemiBold.ttf in Resources */,
+				738B1C1F25C65E060067407B /* Preview Assets.xcassets in Resources */,
+				738B1C6525C671A80067407B /* Inter-ExtraBold.ttf in Resources */,
+				738B1C5F25C671A80067407B /* Inter-ExtraLight.ttf in Resources */,
+				738B1C6725C671A80067407B /* Inter-Thin.ttf in Resources */,
+				738B1C6325C671A80067407B /* Inter-Bold.ttf in Resources */,
+				738B1C1C25C65E060067407B /* Assets.xcassets in Resources */,
+				738B1C6125C671A80067407B /* Inter-Medium.ttf in Resources */,
+				738B1C6425C671A80067407B /* OFL.txt in Resources */,
+				738B1C6825C671A80067407B /* Inter-Regular.ttf in Resources */,
+				738B1C6025C671A80067407B /* Inter-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66AC78FB5FF0B155DEC0F276 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpendoWise/Pods-SpendoWise-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpendoWise/Pods-SpendoWise-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpendoWise/Pods-SpendoWise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B74C3228BD6DF0A4DD59912C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpendoWise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		738B1C1025C65DFE0067407B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				738B1C3825C661750067407B /* ExpenseView.swift in Sources */,
+				73998C5525DA5578007D735B /* AttachmentHandler.swift in Sources */,
+				738B1C8425C6764B0067407B /* ExpenseDetailedViewModel.swift in Sources */,
+				738B1C4F25C663180067407B /* DateExtension.swift in Sources */,
+				D18517C82C01CE2900229664 /* SpendoWise.xcdatamodeld in Sources */,
+				738B1C5225C6632F0067407B /* HelperMethods.swift in Sources */,
+				738B1C8B25C67D880067407B /* ExpenseFilterView.swift in Sources */,
+				738B1C3325C660140067407B /* ExpenseCD.swift in Sources */,
+				738B1C4325C6629D0067407B /* ColorExtension.swift in Sources */,
+				738B1C4025C662890067407B /* InterFontModifier.swift in Sources */,
+				738B1C3C25C662580067407B /* Models.swift in Sources */,
+				738B1C4C25C663060067407B /* DismissKeyboard.swift in Sources */,
+				738B1C4625C662D90067407B /* TextView.swift in Sources */,
+				738B1C7B25C6752E0067407B /* AddExpenseViewModel.swift in Sources */,
+				738B1C1825C65DFE0067407B /* SpendoWiseApp.swift in Sources */,
+				738B1C4925C662F20067407B /* DropdownButton.swift in Sources */,
+				738B1C2F25C65EF70067407B /* Configs.swift in Sources */,
+				73E688DA25FF32790000462A /* ChartView.swift in Sources */,
+				738B1C7725C675200067407B /* AddExpenseView.swift in Sources */,
+				738B1C8025C6763E0067407B /* ExpenseDetailedView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		738B1C2625C65E060067407B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		738B1C2725C65E060067407B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		738B1C2925C65E060067407B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C069B0CDF6CE6EA868C9682 /* Pods-SpendoWise.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpendoWise/Preview Content\"";
+				DEVELOPMENT_TEAM = 69UFR9N84V;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = SpendoWise/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpendoWise;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Forthpro.CitySightGuru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		738B1C2A25C65E060067407B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52499599E1F89C6FACB8F84 /* Pods-SpendoWise.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpendoWise/Preview Content\"";
+				DEVELOPMENT_TEAM = 69UFR9N84V;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = SpendoWise/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpendoWise;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Forthpro.CitySightGuru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		738B1C0F25C65DFE0067407B /* Build configuration list for PBXProject "SpendoWise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				738B1C2625C65E060067407B /* Debug */,
+				738B1C2725C65E060067407B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		738B1C2825C65E060067407B /* Build configuration list for PBXNativeTarget "SpendoWise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				738B1C2925C65E060067407B /* Debug */,
+				738B1C2A25C65E060067407B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D18517C62C01CE2900229664 /* SpendoWise.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D18517C72C01CE2900229664 /* Expenso.xcdatamodel */,
+			);
+			currentVersion = D18517C72C01CE2900229664 /* Expenso.xcdatamodel */;
+			path = SpendoWise.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 738B1C0C25C65DFE0067407B /* Project object */;
+}
